@@ -1,4 +1,4 @@
-# Flappio for Android TV
+# Flappio for TV
 
 Flappio is an Android TV and Android app based on [AIOStreams](https://github.com/Viren070/AIOStreams), with its native player, subtitle tools and profiles.
 
@@ -33,3 +33,13 @@ The app checks the Flappio stable update feed on startup and periodically while 
 ## Source and license
 
 The matching source for version 1.0.0 is available as [flappio-source-1.0.0.tar.gz](https://github.com/Pomonoli/Flappio-releases/releases/download/android/flappio-source-1.0.0.tar.gz), under [AGPL-3.0](https://github.com/Pomonoli/Flappio-releases/releases/download/android/LICENSE). Each published app version includes its corresponding source archive.
+
+## Samsung Tizen TV
+
+The Flappio Tizen wrapper reuses the existing web interface, Samsung remote support,
+AVPlay and subtitle handling with the same backend. Builds target Tizen 7 / 2023 or newer.
+Public `.wgt` downloads are published only after signing and signature verification.
+Without a Samsung certificate profile, the build remains an unsigned private Actions artifact.
+Playback has not been verified on a physical Samsung TV.
+
+See [Samsung installation and certificate setup](INSTALL-TIZEN.md).

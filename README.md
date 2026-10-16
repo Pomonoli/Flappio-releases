@@ -36,10 +36,13 @@ The matching source for version 1.0.0 is available as [flappio-source-1.0.0.tar.
 
 ## Samsung Tizen TV
 
-The Flappio Tizen wrapper reuses the existing web interface, Samsung remote support,
-AVPlay and subtitle handling with the same backend. Builds target Tizen 7 / 2023 or newer.
-Public `.wgt` downloads are published only after signing and signature verification.
-Without a Samsung certificate profile, the build remains an unsigned private Actions artifact.
-Playback has not been verified on a physical Samsung TV.
+**Flappio Tizen 1.0.0**: [Download the signed WGT](https://github.com/Pomonoli/Flappio-releases/releases/download/tizen-v1.0.0/flappio-tizen-1.0.0.wgt) · [Release and matching source](https://github.com/Pomonoli/Flappio-releases/releases/tag/tizen-v1.0.0)
+
+Uses the existing web interface, Samsung remote support, AVPlay and subtitles with
+the same backend. Expected platform: Tizen 7 / 2023 or newer.
+The WGT is signed with ordinary Tizen certificates, with no DUID embedded.
+Signature and original build contents are verified; installation and playback
+have not been tested on a physical Samsung TV. Some TVs may require re-signing
+with a Samsung certificate listing their DUID.
 
 See [Samsung installation and certificate setup](INSTALL-TIZEN.md).
